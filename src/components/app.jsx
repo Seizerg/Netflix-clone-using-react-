@@ -8,8 +8,8 @@ function App(){
     return <div>
         <Navbar/>
         <Banner />
-        <Row title="Netflix Originals" fetched={requests.fetchNetflixOriginals} isLargeRow/>
-        <Row title="Trending Shows" fetched={requests.fetchTrending}/>
+        <Row title="Netflix Originals" fetched={requests.fetchTrending} isLargeRow/>
+        <Row title="Trending Shows" fetched={requests.fetchNetflixOriginals}/>
         <Row title="Top Rated" fetched={requests.fetchTopRated}/>
         <Row title="Action Movies" fetched={requests.fetchActionMovies}/>
         <Row title="Horror Movies" fetched={requests.fetchHorrorMovies}/>

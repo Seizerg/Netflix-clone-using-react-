@@ -21,7 +21,7 @@ function Banner() {
     
     return (
         <div>
-            <header className="heading" style={{backgroundImage:`url("${process.env.REACT_APP_BASE_URL}${banner?.backdrop_path}")`}}>
+            <header className="heading" style={{backgroundImage:`url("${process.env.REACT_APP_BASE_URL}${(banner.backdrop_path===null)?(banner?.poster_path):(banner?.backdrop_path)}")`}}>
             <div className="text" >
             <h3 >{banner?.title||banner?.name||banner?.original_name}</h3>
                   <button className="play"><i className="bi bi-play-fill play-icon"></i><span>Play</span></button>

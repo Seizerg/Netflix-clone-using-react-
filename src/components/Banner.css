@@ -57,3 +57,53 @@ p {
 .text .play:hover {
   opacity: 0.7;
 }
+@media (max-width: 690px) {
+  .text h3 {
+    font-size: 2.2rem;
+  }
+  .text {
+    bottom: 90px;
+    left: 50px;
+    width: 350px;
+  }
+  .text button {
+    font-size: 1rem;
+    padding: 0;
+    width: 90px;
+    height: 40px;
+  }
+  .text p {
+    font-size: 0.8rem;
+  }
+  .text .list {
+    width: 120px;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    width: 500px;
+    min-height: 450px;
+  }
+  .text h3 {
+    font-size: 2.2rem;
+  }
+  .text {
+    bottom: 90px;
+    left: 50px;
+    width: 350px;
+  }
+  .text button {
+    font-size: 1rem;
+    padding: 0;
+    width: 90px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .text p {
+    font-size: 0.8rem;
+  }
+  .text .list {
+    width: 120px;
+  }
+} ;
