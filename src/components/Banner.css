@@ -1,0 +1,59 @@
+.heading {
+  width: 100%;
+  min-height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  margin: 10px 0;
+  box-shadow: 0px -10px 30px 20px black inset;
+}
+.text {
+  position: absolute;
+  text-align: left;
+  width: 500px;
+  bottom: 70px;
+  left: 150px;
+}
+.text h3 {
+  font-size: 4rem;
+}
+.text button {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 30px 10px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.text .play span {
+  color: #111;
+}
+.text .list {
+  background-color: grey;
+  color: white;
+  width: 170px;
+}
+
+.text h3,
+p {
+  color: #fff;
+}
+.text .list:hover {
+  opacity: 0.7;
+}
+.text button .play-icon {
+  color: #111;
+  margin-right: 5px;
+}
+.text button .list-icon {
+  margin-right: 10px;
+}
+.text .play:hover {
+  opacity: 0.7;
+}
