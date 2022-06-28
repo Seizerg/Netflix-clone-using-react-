@@ -55,7 +55,7 @@
 
   .row-posters {
     object-fit: contain;
-    width: 100%;
+    width: 500px;
     max-height: 100px;
     margin-right: 10px;
     transition: transform 0.5s ease;

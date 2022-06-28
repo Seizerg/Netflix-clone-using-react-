@@ -21,7 +21,7 @@ useEffect(()=>{
 },[fetched])
 
 const opts={
-    height:"390",
+    height:"450",
     width:"100%",
     playerVars:{
         autoplay:1
@@ -29,6 +29,9 @@ const opts={
 }
 
 const handleClick= (movie)=>{
+    console.log(movie);
+    console.log(movie.name);
+    console.log(movie.title);
     if(trailerUrl){
         setTrailerUrl("");
     }else{
@@ -50,7 +53,7 @@ const handleClick= (movie)=>{
         
          <div className="row">
              <h2>{title}</h2>
-         
+            {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
          <div className="row-poster">
          {movies.map(movie=>{
             
@@ -59,7 +62,7 @@ const handleClick= (movie)=>{
          })}
         
          </div>
-         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}   
+            
          
             
         </div>
